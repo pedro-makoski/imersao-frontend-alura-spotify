@@ -1,0 +1,114 @@
+.scroll-musicas .musica{
+    position: relative;
+    background-color: var(--color-playlist);
+    width: 170px;
+    height: 160px;
+    padding: 20px;
+    border-radius: var(--border-radius-ordinary);
+    overflow:hidden;
+}
+
+.scroll-musicas a .musica img{
+    width: 107px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+.scroll-musicas a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.musics-content .scroll{
+    max-height: 57vh;
+    overflow-y: auto;
+    margin-top: 10px;   
+}
+
+.scroll-musicas{
+    margin-top: 10px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 0.215fr 0.215fr 0.215fr 0.215fr;
+    grid-gap: 16px;
+    gap: 16px;
+}
+
+.musics-content .scroll::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+.musics-content .scroll::-webkit-scrollbar-thumb {
+   background-color: transparent;
+}
+
+.artist-card{
+    width: 175px;
+    padding: 10px;
+    border-radius: var(--border-radius-ordinary);
+    overflow: hidden;
+}
+
+.artist-card:hover{
+    width: 175px;
+    padding: 10px;
+    border-radius: var(--border-radius-ordinary);
+    background-color: var(--fundo-mais-claro);
+}
+
+
+.card-img img{
+    border-radius: 500px;
+    width: 165px;
+}
+
+.artist-name{
+    font-weight:bold;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.fa-play{
+    background-color: rgb(0, 175, 0);
+    padding: 13px;
+    font-size: 15px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    transform: translate(90px, 50px);
+    transition:all ease .3s;
+}
+
+.artist-card:hover .fa-play {
+    transform: translate(90px, -30px);
+    transition: all ease .3s;
+    opacity: 1;
+}
+
+.musica:hover .fa-play{
+    transform: translate(90px, -30px);
+    transition: all ease .3s;
+    opacity: 1;
+}
+
+.artist-categorie{
+    color: rgb(160, 160, 160);
+    font-size: 14px;
+}
+
+.musica .play .musica-play{
+    transform: translate(100px, 150px);
+    transition: all ease .3s;
+    opacity: 0;
+    font-size: 20px;
+}   
+
+.musica:hover .play .musica-play{
+    transform: translate(100px, 70px);
+    opacity: 1;
+}

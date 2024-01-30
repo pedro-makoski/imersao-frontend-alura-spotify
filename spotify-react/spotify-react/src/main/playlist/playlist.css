@@ -1,0 +1,24 @@
+.scroll-musicas .musica{
+    position: relative;
+    width: 170px;
+    height: 160px;
+    padding: 20px;
+    border-radius: var(--border-radius-ordinary);
+    overflow:hidden;
+}
+
+.scroll-musicas a .musica img{
+    width: 107px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: rotate(25deg) translate(18%, -2%);
+}
+
+.scroll-musicas a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}

@@ -1,0 +1,138 @@
+.hidden{
+    display: none;
+}
+
+.musics-content{
+    padding: 20px 20px 10px 20px;
+    border-radius: var(--border-radius-ordinary);
+    width: 76vw;    
+    background-color: var(--cor-de-fundo-partes);
+    height: 90vh;
+    margin-left:380px;
+    margin-right:56px;
+    margin-top: 10px;
+    height: 70vh;
+
+}
+
+.boasvindas h1{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.boasvindas h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1490px) {
+    .musics-content{
+        margin-left: 410px;
+        width: 66vw;
+    }
+}
+
+@media screen and (max-width:1116px) {
+    .musics-content{
+        width: 85vw;
+        margin-left:0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1114px){
+    .musics-content{
+        margin-top: 140px;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .musics-content{
+        margin-top: 190px;
+    }
+}
+
+
+
+/* PLAYLIST */
+
+.musics-content .scroll{
+    max-height: 59vh;
+    overflow-x: scroll;
+    margin-top: 10px;   
+}
+
+.scroll-musicas{
+    margin-top: 10px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 0.215fr 0.215fr 0.215fr 0.215fr;
+    grid-gap: 16px;
+    gap: 16px;
+}
+
+@media screen and (max-width: 1348px){
+    .scroll-musicas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .musics-content{
+        height: 60vh;
+    }
+
+    .musics-content .scroll{
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 791px) {
+    .scroll-musicas {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:510px){
+    .scroll-musicas {
+        grid-template-columns: 1fr;
+    }
+}
+
+.musics-content .scroll::-webkit-scrollbar {
+    width: 1px;
+  }
+  
+.musics-content .scroll::-webkit-scrollbar-thumb {
+   background-color: transparent;
+}
+
+.fa-play{
+    background-color: rgb(0, 175, 0);
+    padding: 13px;
+    font-size: 15px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    transform: translate(100px, 200px);
+    transition:all ease .3s;
+}
+
+
+.musica:hover .fa-play{
+    transform: translate(100px, 70px);
+    transition: all ease .3s;
+    opacity: 1;
+}
+
+.musica .play .musica-play{
+    transform: translate(100px, 150px);
+    transition: all ease .3s;
+    opacity: 0;
+    font-size: 20px;
+}   
+
+.musica:hover .play .musica-play{
+    transform: translate(100px, 70px);
+    opacity: 1;
+}

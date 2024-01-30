@@ -1,0 +1,134 @@
+/* HEADER */
+
+.main__container{
+    max-width: 80vw;
+    height: 100vh;
+    margin-left:320px;
+    margin-right: 56px;
+}
+
+.header__navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px 10px 10px 10px;
+    border-radius: var(--border-radius-ordinary);
+    background-color: var(--cor-de-fundo-partes);
+}
+
+.header__navigation .navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__navigation .arrow-left{
+    margin-right: 1.25rem;
+}
+
+.arrow-left, .arrow-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-icon);
+    background-color: var(--bg-arrow-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header__login{
+    display: flex;
+    align-items: center;
+}
+
+.header__search{
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    margin-left: 8px;
+    background-color: var(--fundo-mais-claro);
+    border-radius: 500px;
+    border: 1px solid transparent;
+}
+
+.header__search img{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.header__search input{
+    background: transparent;
+    border: none;
+    padding: 0px 100px 0 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: white;
+    outline: none;
+    width: 364px;   
+    font-size: 16px;
+}
+
+.header__login .subscribe{
+    color: var(--texto-cor-se-inscrever);
+    font-size: 16px;
+    border-radius: 40px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 32px;
+    border: none;
+    padding: 17px;
+    transition: .1s;
+}
+
+.header__login .subscribe:hover{
+    transition: .1s;
+    color: white;
+    color: var(--font-color);
+}
+
+.header__login .login{
+    width: 100px;
+    height: 48px;
+    color: var(--cor-de-fundo);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 40px;
+    transition: .3s;
+}
+
+
+.header__login .login:hover{
+    transform: scale(1.04);
+    transition: .3s;
+}
+
+.hidden{
+    display: none;  
+}
+
+.musics-content{
+    padding: 20px 20px 10px 20px;
+    margin: 20px 10px;
+    border-radius: var(--border-radius-ordinary);
+    max-width: 80vw;
+    background-color: var(--cor-de-fundo-partes);
+}
+
+.boasvindas h1{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.boasvindas h2{
+    font-size: 25px;
+    font-weight: bold;
+}

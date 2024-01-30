@@ -1,0 +1,17 @@
+@media screen and (max-width: 1200px){
+    .scroll-musicas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1071px) {
+    .scroll-musicas {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:700px){
+    .scroll-musicas {
+        grid-template-columns: 1fr;
+    }
+}

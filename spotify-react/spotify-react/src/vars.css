@@ -1,0 +1,14 @@
+:root{
+    /* FONTS */
+    --font-dm-sans: "DM Sans", sans-serif;
+    /* COLOR */
+    --font-color: #fff;
+    --font-semdestaque: #b3b3b3;    
+    --fundo-mais-claro: #242424;
+    --cor-de-fundo: #000;
+    --cor-de-fundo-partes: #121212;
+    --bg-icon: #131313;
+    --bg-arrow-color: rgba(0,0,0,7);
+    --texto-cor-se-inscrever: #a7a7a7;
+    --border-radius-ordinary: 16px;
+}

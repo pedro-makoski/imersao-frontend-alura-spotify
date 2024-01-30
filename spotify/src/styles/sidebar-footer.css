@@ -1,0 +1,294 @@
+body {
+    /* background-color: var(--cor-de-fundo); */
+    background-color: var(--cor-de-fundo);
+    font-family: var(--font-dm-sans);
+    color: var(--font-color);
+    overflow: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+}
+
+.sidebar_navigation {
+    background-color: var(--cor-de-fundo-partes);
+    border-radius: var(--border-radius-ordinary);
+    padding: 16px 0 0 16px;
+}
+
+
+
+.sidebar_navigation .logo {
+    display: flex;
+    border-radius: var(--border-radius-ordinary);
+    padding: 8px 0 0 8px;
+}
+
+.sidebar nav ul {
+    margin-top: 20px;
+    padding: 0 10px 5px 10px;
+}
+
+.sidebar nav ul li {
+    padding: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color:var(--font-semdestaque);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 1ms;
+}
+
+.sidebar nav ul li a:hover {
+    color: var(--font-color);
+    transition: 1ms;
+}
+
+.sua-bibilioteca {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--cor-de-fundo-partes);
+    border-radius: var(--border-radius-ordinary);
+    padding: 7px 10px;
+}
+
+.sidebar .sua-bibilioteca .parte-superior .grande {
+    display: flex;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--font-semdestaque);
+    background-color: transparent;
+    margin-right: 10px;
+    border: 0;
+    font-size: 1.25rem;
+    text-align: center;
+    text-transform: none;
+}
+
+.sidebar .sua-bibilioteca .parte-superior .grande h1{
+    color: var(--font-semdestaque);
+}
+
+.sua-bibilioteca .parte-superior {
+    padding: 9px 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.sidebar .sua-bibilioteca .crie-uma-playlist {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+    background-color: var(--fundo-mais-claro);
+    border-radius: 10px;
+    margin: 6px 0;
+    padding: 16px 20px;
+}
+
+.sidebar .sua-bibilioteca .crie-uma-playlist .crie-uma-playlist__content .texto-playlist p {
+    font-weight: 2;
+    font-size: 13px;
+    margin-top: 10px;
+    color: var(--font-color);
+}
+
+.sidebar .sua-bibilioteca .crie-uma-playlist .crie-uma-playlist__content .texto-playlist h1{
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.sidebar .sua-bibilioteca .crie-uma-playlist .crie-uma-playlist__content .crie-a-playlist {
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+    transition: 33ms;   
+    background-color: var(--font-color);
+    font-size: 12px;
+    text-align: center;
+    width: 125px;
+}
+
+.sidebar .sua-bibilioteca .cookies a{
+    text-decoration: none;
+}
+
+.sidebar .sua-bibilioteca .cookies{
+    margin: 10px 20px;
+}
+
+.sidebar .sua-bibilioteca .cookies .cookies__content {
+    font-size: 10px;
+    color:var(--font-color);
+}
+
+.sidebar .sua-bibilioteca .cookies a:hover {
+    text-decoration: underline;
+    color: var(--font-color);
+    transition: 1ms;
+}
+
+.sidebar .sua-bibilioteca .languages__button {
+    border: 1px solid #878787;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 2px 10px 0 0;
+    color: var(--font-color);
+    font-weight: 2;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    width: 185px;
+    padding: 8px;
+}
+
+.linha{
+    display: flex;
+    flex-direction: row;
+}
+
+.sua-bibilioteca .parte-superior .grande .fa-plus{
+    font-size: 13px;
+    margin: 5px 10px;
+    transition: 1ms;
+}
+
+.sua-bibilioteca .parte-superior .grande .fa-plus:hover{
+    color: var(--font-color);
+    transition: 1ms;
+}
+
+.botao-ripple{
+    position: relative;
+    overflow: hidden;
+}
+
+.botao-ripple span{
+    transition: .5s;
+    position: relative;
+    z-index: 3;
+}
+
+.botao-ripple::before{
+    content: '';
+    background-color: var(--font-color);
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: width .5s, height .5s;
+}
+
+.botao-ripple:hover span{
+    color: black;
+    transition: .5s;
+}
+
+
+.botao-ripple:hover::before{
+    width: 400px;
+    height: 400px;
+    transition: width .5s, height .5s;
+}
+
+.ripple-playlist, .ripple-playlist-podcast{
+    transition: .5s;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+
+.ripple-playlist::before, .ripple-playlist-podcast::before{
+    content: '';
+    background-color: #292929;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: var(--eixoY);
+    left: var(--eixoX);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: width .5s, height .5s;
+}
+
+.ripple-playlist:hover::before, .ripple-playlist-podcast:hover::before{
+    width: 400px;
+    height: 400px;
+    transition: width .5s, height .5s;
+}
+
+.ripple-playlist, .ripple-playlist-podcast{
+    transition: .5s;
+}
+
+.ripple-playlist span, .ripple-playlist-podcast span{
+    position: relative;
+    z-index: 3;
+    transition: .5s;
+}
+
+
+
+.ripple-playlist:hover span, .ripple-playlist-podcast:hover span{
+    color: var(--font-color);
+    transition: .5s;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-image: linear-gradient(to right, rgba(174, 40, 149), rgba(80, 154, 245));
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    font-size: 14px;
+}
+
+footer .footer-content h1{
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    z-index: 10;
+}
+
+footer .footer-content p{
+    padding-right: 10px;
+}
+
+footer .footer__button button{
+    padding: 14px 30px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--font-color);
+    transition: 0.7s;
+    z-index: 10;
+}
+
+footer .footer__button button:hover{
+    background-color: #a8a8a8;
+    transition: 0.7s;
+}

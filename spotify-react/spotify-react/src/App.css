@@ -1,0 +1,8 @@
+body{
+  background-color: black;
+  font-family: var(--font-dm-sans);
+  display: flex;
+  justify-content: center;
+  color: var(--font-color);
+  overflow: hidden;
+}

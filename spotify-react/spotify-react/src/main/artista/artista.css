@@ -1,0 +1,58 @@
+.artist-categorie{
+    color: rgb(160, 160, 160);
+    font-size: 14px;
+}
+
+.artist-card{
+    width: 175px;
+    padding: 10px;
+    border-radius: var(--border-radius-ordinary);
+    overflow: hidden;
+}
+
+.artist-card:hover{
+    width: 175px;
+    padding: 10px;
+    border-radius: var(--border-radius-ordinary);
+    background-color: var(--fundo-mais-claro);
+}
+
+.card-img{
+    position: relative;
+}
+
+.card-img img{
+    border-radius: 500px;
+    width: 165px;
+}
+
+.artist-name{
+    font-weight:bold;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.fa-play{
+    background-color: rgb(0, 175, 0);
+    padding: 13px;
+    font-size: 15px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    transform: translate(110px, 200px);
+    transition:all ease .3s;
+}
+
+
+.card-img:hover .fa-play{
+    transform: translate(110px, -80%);
+    transition: all ease .3s;
+    opacity: 1;
+}
+
+.card-img .play .musica-play{
+    transform: translate(100px, 150px);
+    transition: all ease .3s;
+    opacity: 0;
+    font-size: 20px;
+}   
